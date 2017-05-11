@@ -10,7 +10,7 @@ import { StackNavigator } from 'react-navigation';
 
 const Navigator = StackNavigator({
   ImageList: { screen: ImageListScreen },
-  Image: { screen: ImageScreen }
+  ImageScreen: { screen: ImageScreen }
 });
 
 export default App = Navigator;

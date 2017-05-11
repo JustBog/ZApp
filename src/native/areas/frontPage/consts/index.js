@@ -1,1 +1,0 @@
-export const API_URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.recent%20where%20api_key%3D00ac5f70d662304b87e7da585bbdef9d&format=json&diagnostics=true&callback=";

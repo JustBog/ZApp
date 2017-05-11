@@ -1,18 +1,13 @@
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 class ImageScreen extends Component {
   constructor(props, context) {
     super(props, context);
   }
 
-  static navigationOptions = {
-     title: 'Image',
-   };
-
 render() {
-const { image } = this.props.navigation.state.params;
+  const { image } = this.props.navigation.state.params;
 
   return (
     <View style={styles.screen}>
@@ -20,7 +15,7 @@ const { image } = this.props.navigation.state.params;
       <Image source={{uri: image.url}} style={styles.image}/>
     </View>
   );
-  }
+}
 }
 
 export default ImageScreen;
